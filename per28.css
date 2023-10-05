@@ -1,0 +1,72 @@
+#navlist li {
+
+                    margin: 0;
+                    
+                    padding: 0;
+                    
+                    -list-style-type: none; position: absolute;
+                    
+                    } 
+#navlist li, #navlist a{
+                    
+                    height: 300px; display: block;
+                    
+                    }
+                    
+#home{
+                    
+                    left: 0;
+                    
+                    background: url(csspic.jpeg) 0 0;
+                    
+                    width: 45px; background-repeat: no-repeat;
+                    
+                    }
+                    
+#prev{
+                    
+                    left:45px;
+                    
+                    background: url(csspic.jpeg) -46px 0;
+                    
+                    width: 45px;
+                    
+                    background-repeat: no-repeat;
+                    
+                    }
+ #next{
+                    
+                    left: 89px; 
+                    background: url(csspic.jpeg) 0 0;
+ }
+h1::before{
+
+                                        counter-increment: sub;
+                                        
+                                        content:counter(main)"."counter(sub)":";
+                    }
+                                        
+h1{
+                                        
+                                         counter-reset: sub;
+                                        
+                                        }
+                                        
+h2::before{
+                                        
+                    counter-increment: sub;
+                                        
+                    content:counter(main)"."counter(sub)":";
+}
+                                        
+ol{
+                    counter-reset: list;
+                    list-style-type: none;
+}
+                                        
+li::before{
+                                        
+                                        counter-increment:list;
+                                        content: counters(list,".");
+                                        
+}
